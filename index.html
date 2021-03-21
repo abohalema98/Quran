@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Changa:wght@400;800&family=El+Messiri:wght@600&family=Lateef&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+    <div id="app" class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="./Image/Quran.jpg" alt="Quran" width="112" height="28">
+                </a>
+            </div>
+        </nav>
+        <h2 class="title has-text-centered dividing-header subtitle">{{ProjectName}}</h2>
+        <section class="columns" v-show="flag">
+            <article class="message is-large column is-one-quarters" dir="auto">
+                <div class="message-header subtitle notification ">
+                    <p dir="rtl">{{surahName}}</p>
+                </div>
+                <div class="message-body has-text-centered content ">
+                    {{Ayah}}
+                </div>
+            </article>
+        </section>
+        <br>
+
+        <section class="media is-flex">
+            <button class="button is-primary is-large align-items is-block" @click="getAyah">إضغط هنا </button>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>POWERD BY </strong> by
+                    <a href="https://www.linkedin.com/in/mohamed-ahmed98/">
+                        Mohamed Ahmed </a>And The source
+                    <a href="https://github.com/abohalema98/Quran">Code here</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- App -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./script/main.js"></script>
+
+</body>
+
+</html>

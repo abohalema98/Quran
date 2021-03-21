@@ -1,0 +1,13 @@
+body,
+button {
+    font-family: 'El Messiri', sans-serif;
+    direction: rtl;
+}
+
+p {
+    font-family: 'Aref Ruqaa', serif;
+}
+
+footer a {
+    font-family: 'Berkshire Swash', cursive;
+}

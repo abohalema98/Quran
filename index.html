@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Changa:wght@400;800&family=El+Messiri:wght@600&family=Lateef&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="./style/style.css">
@@ -31,8 +32,9 @@
             <br>
             <section class="columns" v-show="flag">
                 <article class="message is-large column is-one-quarters" dir="auto" id="msg" style="font-size: 1.8rem;">
-                    <div class="message-header subtitle notification ">
-                        <p dir="rtl">{{surahName}}</p>
+                    <div class="message-header media">
+                        <p dir="auto" class="media-content has-text-centered">{{surahName}}</p>
+                        <p dir="auto" class="media-content has-text-centered">الجزء {{juzNumber | currency}}</p>
                     </div>
                     <div class="message-body has-text-centered content ">
                         {{Ayah}}
@@ -53,8 +55,11 @@
             <p>
                 <strong>POWERD BY </strong> by
                 <a href="https://www.linkedin.com/in/mohamed-ahmed98/">
-                    Mohamed Ahmed </a>And The source
-                <a href="https://github.com/abohalema98/Quran">Code here</a>
+                    Mohamed Ahmed
+                </a>And The source
+                <a href="https://github.com/abohalema98/Quran"> Code here</a>
+
+
             </p>
         </div>
     </footer>

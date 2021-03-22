@@ -29,3 +29,13 @@ footer a {
     height: 2.5rem;
     /* Footer height */
 }
+
+article:hover {
+    opacity: 0.9;
+    /* background-position: 0rem; */
+    background-color: rgb(240, 211, 178);
+    border-radius: 30px;
+    transform: rotate(0.2deg);
+    transition-delay: 150ms;
+    transition-duration: 150ms;
+}

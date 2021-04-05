@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Changa:wght@400;800&family=El+Messiri:wght@600&family=Lateef&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
+    <script src="./script/main.js" defer></script>
 
 </head>
 
@@ -35,6 +37,7 @@
                     <div class="message-header media">
                         <p dir="auto" class="media-content has-text-centered">{{surahName}}</p>
                         <p dir="auto" class="media-content has-text-centered">الجزء {{juzNumber | currency}}</p>
+                        <p dir="auto" class="media-content has-text-centered">{{numberOfAyahs}}</p>
                     </div>
                     <div class="message-body has-text-centered content ">
                         {{Ayah}}
@@ -64,8 +67,7 @@
         </div>
     </footer>
     <!-- App -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="./script/main.js"></script>
+
 
 </body>
 

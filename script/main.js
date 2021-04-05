@@ -7,6 +7,7 @@ var vm = new Vue({
         surahName: '',
         juzNumber: '',
         revelationType: '',
+        numberOfAyahs: '',
         flag: false
     },
     methods: {
@@ -20,6 +21,8 @@ var vm = new Vue({
             this.surahName = await responseData.data.surah.name
             this.juzNumber = await responseData.data.juz
             this.revelationType = await responseData.data.revelationType
+            this.revelationType = await responseData.data.revelationType
+            this.numberOfAyahs = await responseData.data.surah.numberOfAyahs
             console.log(responseData.data)
         }
 

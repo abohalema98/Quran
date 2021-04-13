@@ -50,3 +50,8 @@ var vm = new Vue({
 window.addEventListener('contextmenu', function(e) {
     e.preventDefault();
 })
+
+//English to Arabic digits.
+// String.prototype.EntoAr= function() {
+//     return this.replace(/\d/g, d =>  '٠١٢٣٤٥٦٧٨٩'[d])
+//   }

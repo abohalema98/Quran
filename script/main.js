@@ -11,11 +11,11 @@ var vm = new Vue({
         flag: false
     },
     methods: {
-        randomNum: function() {
+        randomNum: function () {
             return Math.floor(Math.random() * 6236) + 1
         },
-        getAyah: async function() {
-            let response = await fetch(this.ayahApis + this.randomNum() + "/ar.asad")
+        getAyah: async function () {
+            let response = await fetch(this.ayahApis + await this.randomNum() + "/ar.asad")
             let responseData = await response.json();
             this.Ayah = await responseData.data.text
             this.surahName = await responseData.data.surah.name
@@ -23,31 +23,29 @@ var vm = new Vue({
             this.revelationType = await responseData.data.revelationType
             this.revelationType = await responseData.data.revelationType
             this.numberOfAyahs = await responseData.data.surah.numberOfAyahs
-            console.log(responseData.data)
         }
-
 
     },
     computed: {
-        revarseName: function() {
+        revarseName: function () {
             return
         }
     },
     watch: {
-        surahName: function() {
+        surahName: function () {
             this.flag = true
         }
 
     },
     filters: {
-        currency: function(value) {
+        currency: function (value) {
             var formatter = Intl.NumberFormat('ar-EG');
             return formatter.format(value);
         }
     }
 })
 
-window.addEventListener('contextmenu', function(e) {
+window.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 })
 
